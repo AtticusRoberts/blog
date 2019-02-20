@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Blog</title>
+    <link rel=stylesheet href=style.css>
+  </head>
+  <body>
+
+    <div id="app">
+      <div class='banner' v-if = "!loading">
+        <router-link v-if = "ver=='false'" class='banner-link login-link' to="/login">Login</router-link>
+        <button class='banner-link logout-button' v-on:click = "logout" v-if = "ver=='true'">Log out</button>
+        <router-link class='banner-link home-link' to="/">Home</router-link>
+        <router-link class='banner-link blog-link' to="/blog">Blog</router-link>
+      </div>
+      <div class = "content">
+        <div class='loading' v-if='loading'>
+          <h1 class='loading-head'>Loading...</h1>
+          <p>This may take a second, depending on how slow your connection is.</br>If it's been more than a few seconds, then there might be something wrong on my end. Please let me know at latticusroberts@gmail.com</p>
+        </div>
+        <router-view v-on:login-change="ver = true"></router-view>
+      </div>
+    </div>
+    <script src="vue.js"></script>
+    <script src="vue-router.js"></script>
+    <script src="axios.js"></script>
+    <script src="app.js"></script>
+
+  </body>
+</html>

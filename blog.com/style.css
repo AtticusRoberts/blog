@@ -1,0 +1,176 @@
+/*I plan on integrating this with the login app later, so this saves me some work*/
+body {
+  font-family: sans-serif;
+  color: black;
+  background-color: rgb(240,240,240);
+}
+.form-box {
+  display: block;
+  text-align: center;
+}
+.form-form {
+  position: relative;
+  top: 100px;
+  background-color: white;
+  border: 5px solid black;
+}
+.form-submit {
+  margin-bottom: 10px;
+
+  padding: 10px;
+  color: white;
+  background-color: #0edf00;
+}
+button:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* border: 4px solid black; */
+}
+.form-input {
+  border: 1px solid rgb(150,150,150);
+  background-color: white;
+}
+.form-errors {
+  font-size: 15px;
+  color: red;
+  margin-top: 10px;
+}
+.header {
+  font-size: 40px;
+}
+.loading {
+  display: block;
+  text-align: center;
+}
+.loading-head {
+  font-size: 50px;
+}
+.create-link {
+  position: relative;
+  top: 200px;
+  color: white;
+  padding: 20px;
+  font-size: 15px;
+  text-decoration: none;
+  background-color: #0edf00;
+}
+.create-link:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.banner-link {
+  color: #eaeaea;
+  position: absolute;
+  text-decoration: none;
+  padding: 6px;
+  margin-bottom: 10px;
+}
+.banner-link:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #1eff10;
+  color: white;
+}
+.home-link {
+  left: calc(50% - 60px);
+  top: 5px;
+  font-size: 20px;
+}
+.login-link {
+  position: relative;
+  left: 20%;
+}
+.blog-link {
+  top: 10px;
+  right: 20%;
+}
+.banner {
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 13px;
+  background-color: #0edf00;
+  margin: 0px;
+  padding: 15px;
+}
+.content {
+  position: relative;
+  top: 50px;
+}
+.home-box {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  margin: 0px;
+}
+.post-box {
+  position: relative;
+  width: 90%;
+  left: calc(5% - 20px);
+  padding: 20px;
+  background-color: #eaeaea;
+  margin-bottom: 30px;
+}
+.post-username {
+  position: absolute;
+  width: 250px;
+  top: 0px;
+  font-size: 15px;
+}
+.post-time {
+  width: 200px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  color: gray;
+  font-size: 12px;
+}
+.post-title {
+  font-size: 30px;
+}
+.create-body {
+  border: 5px solid gray;
+  padding: 5px;
+  margin: 10px;
+  position: relative;
+  top: 200px;
+  width: 90%;
+  left: calc(5%  - 20px);
+}
+.create-body:hover {
+  border: 5px solid black;
+}
+.create-content {
+  resize: none;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+.create-title {
+  font-size: 16px;
+}
+.create-head {
+  position: relative;
+  padding: 5px;
+  margin: 10px;
+  left: calc(5%  - 20px);
+  top: 175px;
+  font-size: 30px;
+}
+.create-submit {
+  width: 500px;
+  position: relative;
+  left: calc(50% - 250px);
+  border: none;
+  padding: 10px;
+}
+.create-submit:hover {
+  border: none;
+}
+.logout-button {
+  position: absolute;
+  top: 5px;
+  background-color: inherit;
+  padding: 10px;
+  border: none;
+  left: 20%;
+  font-size: 17rpx;
+}
